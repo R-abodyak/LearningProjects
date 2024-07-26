@@ -29,4 +29,21 @@ public class ToDoService : TodoService.TodoServiceBase
             await responseStream.WriteAsync(response);
         }
     }
+    
+    public override Task<item> UpdateTodo(item request, ServerCallContext context)
+    {
+        var item = TodoItems.FirstOrDefault(i => i.Id == request.Id);
+        if (item == null)
+        {
+            throw new RpcException(new Status(StatusCode.NotFound, "Item not found"));
+        }
+
+        item.Title = request.Title;
+        item.Description = request.Description;
+        item.DueDate = request.DueDate;
+        item.IsCompleted = request.IsCompleted;
+
+        // Return the updated item
+        return Task.FromResult(item);
+    }
 }

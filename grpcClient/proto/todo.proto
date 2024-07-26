@@ -7,6 +7,8 @@ package todo;
 service TodoService {
   rpc AddTodo (AddTodoRequest) returns (AddTodoResponse);
   rpc GetTodos (GetTodosRequest) returns (stream GetTodosResponse);
+  rpc UpdateTodo (item) returns (item);
+
 }
 message item {
   int32 id = 1;
