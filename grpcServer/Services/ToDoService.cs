@@ -20,7 +20,7 @@ public class ToDoService : TodoService.TodoServiceBase
         TodoItems.Add(item);
         return Task.FromResult(new AddTodoResponse{ Item = item });
     }
-    public override Task<GetTodosResponse> GetTodos (GetTodosRequest request, ServerCallContext context)
+    public override Task GetTodos(GetTodosRequest request, IServerStreamWriter<GetTodosResponse> responseStream, ServerCallContext context)
     {
         var response = new GetTodosResponse();
         response.Items.AddRange(TodoItems);
