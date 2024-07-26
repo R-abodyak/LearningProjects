@@ -20,10 +20,13 @@ public class ToDoService : TodoService.TodoServiceBase
         TodoItems.Add(item);
         return Task.FromResult(new AddTodoResponse{ Item = item });
     }
-    public override Task GetTodos(GetTodosRequest request, IServerStreamWriter<GetTodosResponse> responseStream, ServerCallContext context)
+    public override async Task GetTodos(GetTodosRequest request, IServerStreamWriter<GetTodosResponse> responseStream, ServerCallContext context)
     {
-        var response = new GetTodosResponse();
-        response.Items.AddRange(TodoItems);
-        return Task.FromResult(response);
+        foreach (var todoItem in TodoItems)
+        {
+            var response = new GetTodosResponse();
+            response.Items.Add(todoItem);
+            await responseStream.WriteAsync(response);
+        }
     }
 }
