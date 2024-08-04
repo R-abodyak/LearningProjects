@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0jNpExvwG36kHYFsSUDHuUrBsrlQkRHnuRqjEnVcS5lJSe7NCCjUxxDxv/xVisD6KuCGdjKJvo+r64aiFNzjnw==",
+  "dgSpecHash": "hJWlGijahntzxF/2D0iwQZiaWW1mEovvt47+ORxqvimk2BVIcsPoYDf+MhHqqNfX6LcWbZGCPfwQPgLI2/pc8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rawan\\Desktop\\projects\\TaskManagementSystem\\grpcServer\\grpcServer\\grpcServer.csproj",
   "expectedPackageFiles": [
@@ -20,8 +20,11 @@
     "C:\\Users\\Rawan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Rawan\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Rawan\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Rawan\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\Rawan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\Rawan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Rawan\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Rawan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Rawan\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grpcServer", "grpcServer\grpcServer.csproj", "{9115820B-0570-471A-A97F-629BBCBDBE72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grpcClient", "grpcClient\grpcClient.csproj", "{5586EF25-EA1F-4967-AFB7-499239ADB688}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{5586EF25-EA1F-4967-AFB7-499239ADB688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
